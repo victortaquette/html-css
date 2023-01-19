@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #363636;
+    --cor1: #CFB386;
+    --cor2: #B5B5B5;
+    --cor3: #000000;
+    --cor4: #FFFFFF;
+ /*Serve para criar uma variavel que todos os valores das cores de 0 a 4 tem um nome, e na hora de for colocar o nome da cor, é só fazer referencia a variavel como o do body e header*/
+
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: 'Montserrat', sans-serif;
+--fonte-android: 'Android', cursive; 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: #FFFFFF;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Aqui é o espaço da primeira linha do parágrafo*/
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: #B5B5B5;
+    font-weight: bold;
+    background-color: #363636;
+    padding: 4px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor0));
+    min-height: 150px;
+    text-align: center;
+}
+
+header > p {
+    color: #FFFFFF;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 15px;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.226);
+}
+
+nav {
+    background-color: var(--cor0);
+    padding: 5px;
+    box-shadow: 0px 7px 7px rgba(255, 255, 255, 0.312);
+    text-align: center;
+
+}
+
+nav > a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s; /*Quando eu passar o mouse por cima dos links,aparecer uma animação de segundos */
+    max-width: 1000;
+    min-width: 280;
+    font-size: 1.3em;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+header > h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+    padding-top: 20px; /*Vai fazer a linha descer, e o margin faz a linha subir*/
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.492);
+}
+
+main {
+    background-color: var(--cor1);
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px; /*Serve para o conteudo não grudar ou ficar colado no rodapé*/
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%; /*Coloque % para a imagem funcionar, ao invés de px*/
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video { /*Fazendo config de video para ele ficar no meio*/
+    background-color: var(--cor3);
+    margin: 0px -20px 30px -20px; 
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main > h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+}
+
+main > h2 {
+    font-family: var(--fonte-android);
+}
+
+aside {
+    background-color: #B5B5B5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+}
+
+aside > h3 {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor2));
+    color: #FFFFFF;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+}
+
+aside > ul {
+    list-style-type: '\9999\00A0'; /*Como configurar um emoji, e colocar 00A0 para dar espaço */
+    list-style-position: inside; /*Deixa a bolinha dentro do quadrado*/
+    columns: 2; /*Divide a coluna em 2 ou varias colunas*/
+}
+
+footer {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #B5B5B5;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/preview.gif');
+            background-size: 100% 100%;
+            position: relative;
+            height: 95vh;
+            background-color: lightsalmon;
+            padding: 10px;
+        }
+
+        #conteudo {
+            background-size: 100% 100%;
+            background-image: url('imagens/preview.jpg');
+            position: absolute;
+            height: 200px;
+            background-color: rgb(216, 125, 255);
+            width: 350px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); 
+            /*No primeiro 20px, se for negativo, ele mexe para esquerda(se for positivo, ele mexe para a direita). No segundo 20px, se estiver negativo, ele mexe para cima(se for positivo, ele mexe para baixo)*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

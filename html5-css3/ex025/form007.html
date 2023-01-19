@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest" required>
+
+                <option value="" selected hidden >--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <!--Aqui eu coloquei o select para fazer uma seleção, usei o option para colocar os dados, cada um tem o valor (a sigla) para representar o Estado. O OPTGROUP serve para agrupar as regiões, e eu deixei o "---ESCOLHA---" como padrão usando o SELECTED e escondi ela usando "HIDDEN" para o REQUIRED funcionar coloque ele no SELECT-->
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p> <!--Aqui eu usei o datalist para colocar uma lista de opções para o visitante escolher, para funcionar dentro do input, eu acrescento "list" com o id que nesse caso seria "lstprof", e ainda tem a opção de tirar o value do option(ele só vai exibir o que está no meio do option), para o REQUIRED funcionar coloque ele no INPUT -->
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="Cont">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <abbr id="imsg" hidden>Não é obrigatório preencher esse campo </abbr>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

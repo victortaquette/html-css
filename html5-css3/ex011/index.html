@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title> <link rel="shortcut icon" href="logo-bmw.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminiua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png"> <!--Aqui segue uma ordem de tamanho, é do menor para o maior, então quando colocar uma imagem grande, você coloca atrás da img grande para não dar erro -->
+        <source media="(max-width: 1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <!--Aqui, se a largura for menor do que 1000, ou seja, se chegar a menos do que 1000, ele vai carregar a foto m-->
+        <img src="Imagens/foto-g.png" alt="Imagem Flexível">
+    </picture> <!--Ela parece uma imagem, permite que você crie várias fontes e lógicamente vai aparecer uma imagem.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--Jeito simples de colocar áudio com dois parâmetro que é o controls e o autoplay, existe o formato MP3, WAV e OGG 
+    <audio src="Midia/sombrio-esqueci o nome.mp3.mp3" controls autoplay></audio> -->
+    <!--Outro jeito seria esse-->
+        <audio preload="metadata" autoplay controls loop>
+            <source src="Midia/sombrio-esqueci o nome.mp3.mp3" type="audio/mpeg">
+            <source src="Midia/sombrio-esqueci o nome.mp3.mp3" type="audio/OGG">
+            <source src="Midia/sombrio-esqueci o nome.mp3.mp3" type="audio/WAV">
+            <p>Infelizmente seu navegador não consegue reproduzi audio <a href="Midia/sombrio-esqueci o nome.mp3.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+            <!--Aqui, vai tentar carregar o primeiro audio, se não conseguir, ele vai tentar carregar o próximo e assim continuamente, no caso do preload(auto que só considera quando o site terminou de carregar depois que você terminou de carregar todo o audio também, o METADATA só carrega o nome do arquivo e algumas informações) o Loop é para ficar repetindo toda vez que ele termina e o controle é você clicar para o audio funcionar-->
+        </audio>
+</body>
+</html>

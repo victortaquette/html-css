@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+            border: 4px solid black;
+            border-style: double;
+            border-radius: 10px 10px 0 0 ;
+            background-color: cadetblue;
+        }
+
+        caption.caixa {
+            color: aliceblue;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        td, th {
+            border: 1px groove black;
+            padding: 10px;
+        }
+
+        th.legenda {
+            background-color: aquamarine;
+        }
+        
+        th.start {
+            background-color: yellow;
+        }
+        
+        
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        div#container {
+            overflow-x: auto; /*Faz a rolagem horizontal, mas será só a tabela */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em Telas Pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem saepe, porro ut ab id similique nesciunt nulla, optio quos minima, praesentium delectus doloribus consequuntur illo maxime deleniti voluptatibus libero quisquam!</p>
+    <div id="container">
+        <table>
+            <caption class="caixa">Tabela Responsiva</caption>
+            <thead>
+                <tr>
+                    <th class="start">Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="legenda">Carro</th>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <th class="legenda">Comida</th>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                   <th class="legenda">Livro</th>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                   <td>400</td>
+                </tr>
+                <tr>
+                   <th class="legenda">Meia</th>
+                   <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <th class="legenda">Sapato</th>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <th class="legenda">Jóias</th>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <th class="legenda">Clarabóias</th>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                    <td>400</td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

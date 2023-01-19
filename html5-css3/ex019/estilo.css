@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+        /*EM HTML, TUDO O QUE É ID EM CSS É # 
+        EM HTML, TUDO O QUE É CLASS É IGUAL A .*/
+
+body{
+    background-color: rgb(173, 244, 194);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    color: rgb(21, 71, 38);
+}
+
+#principal { /*CLASSE ID SERVE PARA IDENTIFICAR UM UNICO ELEMENTO*/
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h2 {
+    color: rgb(103, 150, 109);
+}
+
+.basico {
+    color: rgba(0, 0, 255, 0.404);
+}
+    
+.intermediário {
+    color: rgba(255, 0, 0, 0.405);
+    
+}
+
+.avançado {
+    color: rgb(51, 9, 149);
+}
+
+.destaque {
+    background-color: rgba(165, 42, 42, 0.397);
+}
+

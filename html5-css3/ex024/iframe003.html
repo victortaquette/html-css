@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veritatis ratione quae blanditiis! Doloribus officiis, minima, molestias, ad asperiores numquam recusandae ipsum nesciunt consectetur voluptatibus voluptate exercitationem necessitatibus. Doloribus, voluptate, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat ullam enim quaerat iure expedita repellendus quisquam omnis dolorem vel minima quos ducimus magni recusandae sit autem, odio nihil! Voluptas.</p>
+<!--Aqui serve para carregar uma página interna dentro de um frame, nesse caso você usa o "a", dentro dele o target "frame", esse frame vem do name que criamos dentro do frame -->
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="pag002/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="pag003/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates voluptatum est quis dolor blanditiis, consequatur a earum in, omnis consectetur! Magni temporibus, perferendis tenetur repellendus soluta omnis itaque repudiandae, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum voluptas tenetur doloremque nisi eum adipisci saepe maxime, distinctio velit assumenda quia. Voluptatibus eum ea facilis laboriosam cum ab natus sint?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima<h1><p>lorem</p><img src='imagens/instagram-logo-png'>"></iframe>
+
+    <p>Infelizmente seu navegador não é compatível!</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title> <link rel="shortcut icon" href="logo-bmw.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Inserindo Vídeos localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--<video src="Midia/meu-video-webm.webm" width="200px" autoplay controls ></video> jeito simples de fazer um vídeo <rodar-->
+        <video controls width="600px" poster="Midia/paisagem-650.jpg" loop autoplay> <!--O poster serve para colocar uma imagem de capa no seu video-->
+            <source src="Midia/Girl-In-The-Water-On-Rainy-Day-Live-Wallpaper-.mp4" type="video/mp4">
+            <!--<source src="Midia/meu-video-webm.webm" type="video/webm"> -->
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+        </video>
+        <details name="Satisfatory"> <!--EXTRA DO MIMO-->
+            <p>Girl in the Water on rainy day</p>
+            <figcaption>Chuva</figcaption>
+        </details>
+        <hr>
+        <h1>Inserindo Vídeos do Youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

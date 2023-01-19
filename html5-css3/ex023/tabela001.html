@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table {
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+            border: 20px groove deepskyblue; 
+        }
+
+        tr.linha {
+            background-color: lightsalmon;
+        }
+
+        td {
+            border: 3px double black;
+            padding: 6px;
+            text-align: center; /*Alinnhamento horizontal*/
+            vertical-align: bottom; /*Alinhamento vertical*/
+
+        }
+
+        td.numero {
+            text-align: right;
+            vertical-align: top;
+        }
+
+        td.dado {
+            background-color: rgba(137, 43, 226, 0.285);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--Hierarquia de tabelas simples
+    Table Row = linha de tabela
+    Table Header = cabeçalho de tabela
+    Table Data = dados de tabela
+    -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td>  
+            <td>B2</td>  <!--O fechamento da tag não é obrigatório -->
+            <td>C3</td>
+        </tr>
+        <tr class="linha">  <!--Segunda Linha-->
+            <td>A2</td>
+            <td class="numero">B2</td>
+            <td class="numero">C2</td>
+        </tr> <!--Terceira Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        <tr> <!--Quarta Linha-->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td> 
+        </tr>
+    </table>
+</body>
+</html>

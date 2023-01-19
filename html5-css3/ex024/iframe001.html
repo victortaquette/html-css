@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframes</title>
+    <style>
+       iframe {
+        /*CSS é soberano contra os iframes, se conter um estilo de css com iframe,o que vale são os css*/
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+       } 
+    </style>
+</head>
+<body>
+        <!--Tamanho padrão iframe é de 300 por 150 (300px de largura e 150 de altura)-->
+
+    <h1>Testando o uso de um iframe</h1>
+
+    <p>Acessando o site do 
+        <!--Posso configurar usando scolling, o valor auto é o padrão e se excerder o tamanho do iframe ele vai criar uma barra de rolagem, a opção de YES: mesmo se o conteúdo estiver todo cabendo do iframe, ele iria aparecer a barra de rolagem, já o NO: mesmo se o conteúdo seja maior, ele não vai permitir a barra de rolagem  -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="2" height="500" scolling="no"></iframe>
+        <a href="#">Curso em Vídeo</a>
+
+        curso em vídeo</p>
+        <p>Talvez o site do
+
+            <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+            também é muito legal, pena que não funciona dentro do iframe <!--Alguns sites tem proteções contra terceiros-->
+            <a href="https://www.google.com.br/">Google</a>
+        </p>
+        <p>Olha ai o meu repositório 
+            
+            <iframe src="https://github.com/victortaquette" frameborder="0"></iframe>
+            <a href="https://github.com/victortaquette">Github</a>
+           
+            que eu acabei de criar hehehehe, mas não ta funcionando também</p>
+
+</body>
+</html>

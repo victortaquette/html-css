@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <!--PARA USAR PSEUDOCLASSE(SÃO PALAVRAS QUE DEFINEM CLASSES DE ELEMENTOS DENTRO DO HTML), SE USA O :(DOIS PONTOS), o id se usa #, a classe se usa ponto(.) e para chamar de filho se faz com esse sinal (>) O PSEUDO ELEMENTO ELE PODE AGIR NAS CLASSES, NOS ELEMENTOS, OS IDS. DIRETAMENTE NO CONTEÚDO PERIFÉRICO, ELE USA QUATRO PONTOS (::)-->
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = Children
+        */
+
+        a /*Configura a cor, tirou o sublinhado e usou o negrito*/ {
+            color: red;
+            text-decoration: none; /*Tira o sublinhado*/
+            font-weight: bold;
+        }
+
+        a:visited /*Serve para ver os que já foram visitados(NESSE CASO O SELETOR É O LINK*/{
+            color: darkblue;
+        }
+
+        a:hover {
+            text-decoration: underline; /*Coloca o sublinhado*/
+            color: black;
+        }
+
+        a:active /*É quando eu clico nele(no link) ele pode ficar neste exemplo com a cor amarela*/ {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(133, 133, 229);
+        }
+
+        .especial::before /*Antes do link*/ /*Para usar a classe com o elemento, usa o ponto e os 4 pontos, dai ele vai aparecer verdinho, se não ficar verde é porque deve estar faltando o ponto.*/ {
+            content: '→ ';
+        }
+
+        .especial::after /*Depois do Conteudo, eu vou fazer um link*/{
+            content: ' ←';
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul> <!--O BLANCK É PRA ABRIR EM UMA NOVA ABA, O SELF É NA MESMA PAGINA COMO O PARENT E O TOP-->
+        <li><a href="https://web.whatsapp.com/" class="especial">Whatsapp</a></li>
+        <li><a href="https://animesup.online/" target="_blank">Animes up</a></li>
+        <li><a href="https://meusanimes.net/" target="_blank">Meus Animes</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+    <style> /*Criando Degrade usando background image, pode indicar a direção e quantas cores quiser, usando right, left, top, bottom*/
+      /*Seletor especial e global*/  * {
+            height: 100%;
+        }
+        body { /*SDa para usar o linear(usa-se o ângulo 'deg') e o radial(usa-se circle com %)  */
+            background-image: radial-gradient(circle, #FCFDFF 10%, #9BDDFF 30%, #6EBCFC 60%, #D6896B 80%, #AA9400 100%);
+            background-attachment: fixed; /*Ele fica fixo mesmo se você rolar a tela para todos os lados(cima, baixo, direita e esquerda) o texto te acompanha*/
+        }
+    </style>
+</head>
+<body>
+    <H1>Testando os Gradientes</H1>
+</body>
+</html>

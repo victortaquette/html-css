@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label for="isxmas"><input type="radio" name="sexo" id="isxmas" value="M">Masculino <br></label>
+            <label for="isxfem"><input type="radio" name="sexo" id="isxfem" value="F">Feminino</label>
+            <!--Quando eu coloco no NAME o nome sexo, ele consegue deixar eu selecionar uma opção ou outra sem marcar as duas, se eu quiser deixar marcado eu uso a opção CHECKED -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos:</legend>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut"> Futebol  <br></label>
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat">Natação <br></label>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas">Basquete <br></label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten">Tênis</label>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos de Tags</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: khaki;
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(240, 153, 140);
+            padding: 10px;
+            margin: 10px;
+        }
+        h1 {
+            box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.444);
+            text-align: center;
+        }
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px; /*TOP LEFT, TOP RIGHT, BOTTOM right, BOTTOM left, se você colocar somente 2 pixels ao inves de 4, ele vai medir Superior esquerda e inferior direita, do outro lado será superior direita e inferior esquerda*/
+            box-shadow: 5px 0px 25px 3px rgba(0, 0, 0, 0.484);
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 4px;
+            margin: auto;
+            width: 300px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: gray;
+        }
+        nav {
+            background-color: royalblue;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.541);
+        }
+        nav > a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 1px;
+            margin-left: 350px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            background-color: black;
+        } 
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        <h2>Esportes, Politicas e Tecnologia</h2>
+        </section>
+        <section id="noticias">
+            <article>
+            <h3>Noticia sobre o Brasil</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis error cupiditate necessitatibus eius, consectetur, ad alias quo quae quas soluta ullam? Magnam similique laboriosam recusandae deserunt! Voluptatibus vero suscipit a.</p>
+                <aside>
+                    <p>Artigo escrito por Victor</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Victor</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

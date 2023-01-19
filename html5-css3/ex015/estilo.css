@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+p {
+    text-align: center;
+    color: white;
+}
+h1 {
+    color: black;
+    background-color: gold;
+}
+h2 {
+    color: black;
+    background-color: darkorange;
+    text-align: center;
+}
+a {
+    color: white;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title> <link rel="shortcut icon" href="logo-bmw.png" type="image/x-icon">
+    <style>
+        @font-face {
+          /*FONT FACE É USADO PARA COLOCAR UMA FONTE EXTERNA(LETRA) */ 
+            font-family: 'London';
+            src: url('Fontes/old_london/OldLondon.ttf') format('truetype'), url('Fontes/old_london/Olondona.otf') format('opentype'); 
+            /*TIPOS DE FORMATO
+            - OPENTYPE (OTF)
+            - TRUETYPE (TTF)
+            - EMBEDDED-OPENTYPE ()
+            - TRUETYPE-AAT (APPLE ADVANCED TYPOGRAPHY)
+            - SGV */
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'London', Helvetica, sans-serif;
+            background-color: cornflowerblue;
+        }
+        h1, h2{
+            font-family: 'London', Times, serif;
+            color: rgb(0, 0, 0);
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus distinctio vero libero ea quia fugit quisquam, eum, accusamus vel perspiciatis iure aliquid, dolores consectetur veritatis impedit culpa! Odio, sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure quis ea accusamus unde minima blanditiis porro? Numquam libero cupiditate nisi, sequi enim ab debitis esse, nam tempore molestias quia, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odio porro fugit quia excepturi eligendi quaerat consequatur nobis adipisci natus, corrupti, vel animi doloribus aspernatur mollitia facere! Eligendi, recusandae. Maxime?</p>
+    <h2>Subtítulo 2 </h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore reprehenderit dolorum veritatis saepe quos harum, deleniti soluta consequatur quasi quidem voluptate, ea odit quas asperiores pariatur sapiente, repellendus doloremque alias, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus odit inventore corrupti aspernatur excepturi porro ex ipsam cumque exercitationem, earum eos ad distinctio natus ab atque rem voluptatibus voluptatum quia!</p>
+</body>
+</html>
