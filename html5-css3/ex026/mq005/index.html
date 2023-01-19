@@ -7,10 +7,11 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
-        <h1>Meu site</h1>
+        <h1>Mídias Queries</h1>
         <i id="burguer" class="material-symbols-sharp" onclick="clickMenu()">menu</i>
         <menu id="itens">
             <ul>
@@ -46,6 +47,13 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>

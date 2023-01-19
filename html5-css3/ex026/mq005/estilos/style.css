@@ -44,6 +44,7 @@ i#burguer:hover {
 
 menu {
     display: none;
+    
 }
 
 menu > ul {
@@ -52,7 +53,7 @@ menu > ul {
 
 menu > ul > li > a {
     padding: 10px;
-    display: block;
+    display: flex;
     text-decoration: none;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.384);
